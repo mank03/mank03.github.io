@@ -1,0 +1,22 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+    background-image: url("/src/images/bg-body.png");
+    background-repeat: repeat-x;
+    background-position:fixed; 
+    background-size: cover; 
+}
+
+.headerContainer>h1 {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #107386
+}
+
+.heroImage {
+    max-width: 50%;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    height: auto;
+}

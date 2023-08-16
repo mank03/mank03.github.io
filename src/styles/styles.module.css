@@ -1,0 +1,46 @@
+.section {
+    margin-bottom: 2rem;
+}
+
+.section>h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 4rem;
+}
+
+.section>p {
+    margin: 0 4rem;
+    text-align: start;
+}
+
+.section>details {
+    border: 1px solid #107386;
+    border-radius: 4px;
+    margin: 1rem 4rem;
+}
+
+.section>summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+
+summary {
+    text-align: left;
+    margin: 1rem 2rem;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+details[open]>p {
+    margin: 0 2rem;
+    text-align: start;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #107386;
+    margin-bottom: 0.5em;
+}
