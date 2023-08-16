@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="BM-favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="/style.css">
+    <title>Brittany Mueller | The Co-operators</title>
+</head>
+<body>
+    <div class="sidenav">
+        <a id="home" title="Home" href="index.html">Brittany Mueller</a>
+        <div class="work-term-box" title="Work Term 1 & 2">
+            <a href="/pages/cooperators.html">
+                <img src="/assets/Cooperators-icon.png" alt="Work Term 1 & 2">&nbsp;Work Term 1 & 2&nbsp;</a>
+        </div>
+        <div class="work-term-box" title="Work Term 3 & 4">
+            <a href="/pages/tulip.html">
+                <img src="/assets/tulip-logo.png" alt="Work Term 3 & 4">&nbsp;Work Term 3 & 4&nbsp;</a>
+        </div>
+        <div class="work-term-box" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/brittany-a-mueller" target="_blank">
+                <img src="linkedin-fill-edit.png">&nbsp;LinkedIn&nbsp;</a>
+        </div>
+    </div>
+
+    <div id="main">
+
+        <div id="page-header">
+            <img src="/assets/Cooperators-logo-blue-2X.png" alt="The Co-operators">
+            <h1>Summer & Fall 2020 Work Term Report</h1>
+        </div>
+
+        <div class="card" id="intro">
+            <h2>Introduction</h2>
+            <p>
+                Welcome to my first work term report!  I am Brittany Mueller, a 3rd year Computer Science Co-op student,
+                minoring in Mathematics. This report will go over my 8 month co-op term (May to Dec 2020) at The Co-operators,
+                what I accomplished, the skills I developed, and how I was able to find success despite a fully remote work environment.
+            </p>
+        </div>
+        <div class="card" id="about-company">
+            <h2>About the Co-operators</h2>
+            <p>
+                The Co-operators is a Canadian insurance co-operative founded in Saskatchewan in 1945.
+                Their head office is located here in downtown Guelph, which is where I would have been working had my work term not been remote.
+                The Co-operators consists of several subsidiary companies that each provide different solutions.
+                The largest of these companies is Co-operators General Insurance Company, which offers property and casualty
+                (P&C) insurance (home, auto, farm, & commercial) through a network of advisors across Canada.
+            </p>
+        </div>
+        <div class="card" id="job-description">
+            <h2>Job Description & Project Overview</h2>
+            <p>
+                My role as a Junior Developer & System Analyst at The Co-operators started on the SPM Compensation team.
+                SPM (Sales Performance Management), our teams overall project, is a cloud based platform
+                for Co-operators advisors to manage their agency, staff, sales, and commissions paid to their agency.
+            </p>
+            <p>
+                My main responsibilities included developing, deploying, and maintaining multiple test automation suites
+                that supported daily health check and regression testing of this application to ensure stability of the
+                application and the accuracy of commissions calculations.
+            </p>
+            <p>
+                Test suite development was done using Robot Framework (a keyword-driven test automation framework), web drivers, and Selenium keyword libraries for web testing.
+                Test case writing involved first finding locators for key HTML elements, or using XPath to query the HTML if unique identifiers didn't exist, then
+                using Selenium keywords with these locators to automate navigation of the web browser.
+
+                Deployment was done using Jenkins, a CI/CD automation server, where I created and managed Jenkins pipeline jobs for each test suite through a Jenkinsfile.
+                To compliment these Jenkins builds, particularly the daily health check that runs each morning, I created a custom email template in Groovy and HTML
+                that parses the log files after each scheduled build into a concise fail/pass summary and sends the results.
+
+                I was also responsible for developing and maintaining an assortment of macro enabled templates for comparing and validating files, which required me to learn VBA.
+            </p>
+            <p>
+                Going into this co-op, I had no prior experience with any of these technologies, but my knowledge of
+                HTML and JavaScript made learning web testing with Robot Framework and debugging easier to approach.  My previous experience
+                with Python was also an asset when creating custom libraries for the testing of SPM's Commissions dashboards.
+                Overall, as the sole developer on these test suites in a COVID-19 remote setting, my ability to work independently, pick up and self-teach new
+                technologies as needed, and my strong analytical skills were all vital to my success.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Learning Goals & Reflections</h2>
+            <h4> <i>Improve Documentation and Organization Skills</i></h4>
+            <p>
+                When I started, one of my struggles was around understanding where to pick up on our old test automation suite since no documentation existed for it.
+                As this was my first time working in a corporate environment, documenting work through Jira tasks and Confluence was new to me
+                so it became a goal of mine to fill the gaps in our documentation and improve my own organization skills in the process.
+                I succeeded at this by creating detailed Jira tickets and Confluence pages so my supervisors could track my work.
+                I created Confluence pages for each of my test suites where I outlined their purpose, test coverage, and provided relevant links to their Bitbucket repos and Jenkins jobs.
+                I also documented setup and accesses required for the Robot development environment. I often had team members
+                or coworkers from other teams reach out to me because they were interested in my work or wanted to learn more about Robot Framework,
+                and they found this documentation quite helpful.
+            </p>
+            <hr>
+            <h4><i>Develop Skills in Robot Framework Test Automation</i></h4>
+            <p>
+                My first major project at The Co-operators was developing an enhanced daily health check for SPM.
+                The existing health check was undocumented, not very robust, and written in Java.  At this point I had never
+                done any test automation before, so starting from scratch was most efficient. I chose to start over in Robot Framework,
+                a technology being used by another team who could provide some initial setup and technical support if needed.
+                I began teaching myself Robot Framework and created a new daily health check with significantly more test coverage than before.
+
+                As my skills with Robot grew, I expanded the scope of our regression testing from just a health check into
+                testing full Workflows such as onboarding new agency staff, offboarding staff, and requesting e-signed documents.
+
+                Towards the end of my term, I took my experience from the daily health check and created a similar test suite
+                for my digital team.
+
+                Of all my goals, this is the one I am most proud of and feel I found the most success with.  I feel confident
+                in the test automation skills I've developed and my knowledge of Robot Framework.
+            </p>
+            <hr>
+            <h4> <i>Build Confidence Speaking to Large Groups</i></h4>
+            <p>
+                Presenting or speaking to groups has never been my strong suit, so I wanted a goal of mine to be building my confidence speaking to larger groups, especially senior members.
+                One thing I did to help achieve this was occasionally offering to lead the daily stand up on my digital team. This helped me
+                practice speaking in a structured setting. Besides this, the key to my success was learning to take ownership of my project work.
+                Test automation in particular was something I could own and something only I could speak to, which helped me develop that confidence and recognize just how valuable my work was.
+                Ultimately, I was able to extend the confidence I felt in my work to my presentations, and successfully
+                gave demos of my regression test suites to both the greater SPM team and senior leadership team.
+            </p>
+            <hr>
+            <h4> <i>Develop Front-End Dev Skills</i></h4>
+            <p>
+                Towards the end of my second term, I was given the unique opportunity to extend the scope of my work from SPM
+                into front end development for a digital team, Ctrl Alt Elite. I worked on enhancements to their Data Generator Tool,
+                an Angular web app used to automate the creation of test clients and policies.
+                My major contribution to the tool was adding a Changelog page to address major releases and an About
+                page with routing to make the tool more user friendly. Through this work I was able to develop new front-end skills and a deeper understanding
+                of Angular projects. Overall, this is one goal I feel I could have been more successful with.
+                I felt there was still so much I had to learn, but unfortunately my work term came to an end! Regardless,
+                this experience certainly helped me realize web development is something I'd love to try more of.
+            </p>
+            <hr>
+            <h4> <i>Mentor New Developer on Robot Framework</i></h4>
+            <p>
+                Mid October, a new junior developer started on the SPM team. One of my goals before the end of my term
+                was to help him ramp up to ensure all my test suites and Jenkins jobs could seamlessly live on and be maintained after I was gone.
+                To accomplish this, I took on more of a mentorship role and began sharing my experiences with Robot Framework and Jenkins,
+                as well as collaborating on project work with him. I prepared additional documentation as a tips and troubleshooting guide
+                for him to follow.  As his skill with Robot grew, I continued to delegate work and provide ad hoc support.
+                By the end of my term, he was managing the test suites on his own and, based on feedback from my supervisors,
+                is confident in his ability to troubleshoot and maintain the suites!
+            </p>
+            <hr>
+            <h4> <i>Learn Agile Methods and Practices</i></h4>
+            <p>
+                During my work term I participated in an array of agile ceremonies, including demos, sprints, and retros.
+                Each of my teams also held a daily stand up each morning where we gave updates on our Jira tickets and raised any blockers we might have.
+                I was also given the opportunity to receive my Lean White Belt Certification.
+                In short, Lean is a methodology that aims to eliminate waste (poor design, poor communication, etc.) to optimize
+                the resources that go into activities that deliver value. The Agile methods used today were built off of Lean and the two can compliment each other.
+                An easy way to think of it that I learned from my course: "Lean tells you what to build, Agile helps you build it."
+                Overall, I was successful when it came to learning more about the methodology, giving demos of my project work, and learning to give concise updates at stand up.
+                However, I didn't get the opportunity to participate in as many retros as I anticipated.
+            </p>
+        </div>
+        <div class="card">
+            <h2>Conclusion</h2>
+            <p>
+                Overall, my 8 month work term at The Co-operators was extremely successful.  Test automation was new to me,
+                but I ramped myself up and continued to push the scope of my work - I am proud of all that I achieved. My work for teams in both
+                the Advisor Experience and Client Experience programs allowed me to learn a lot about the insurance industry
+                and working in a corporate environment. I also had the opportunity to learn many new technologies
+                and strengthen my skills with those I was already familiar with:
+            </p>
+            <div class="tech-list">
+                <h4 class="tech-header">Improved Technologies</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git/Bitbucket</li>
+                </ul>
+            <h4 class="tech-header">New Technologies</h4>
+            <ul>
+                <li>Robot Framework</li>
+                <li>Jenkins</li>
+                <li>Jenkinsfile</li>
+                <li>Groovy</li>
+                <li>VBA</li>
+                <li>Angular</li>
+                <li>Express</li>
+                <li>Jira</li>
+                <li>Confluence</li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Acknowledgements</h2>
+            <p>
+                Special thanks to all my supervisors, Venkat Reddy, Sheri Arndt, and Steve Kacheff, for continuing to encourage
+                me, guide me, and for giving me the opportunity to join the digital team for the latter part of my term.
+                Thank you to both of my teams and all the people I met along the way who supported me and took an interest in my work!
+                I was pleasantly surprised by the sense of community I felt despite my work term being fully remote.
+                Although we never got to meet in person, I still had an amazing time at The Co-operators, best wishes to everyone.
+            </p>
+        </div>
+
+    </div>
+    <footer>Brittany Mueller</footer>
+</body>
+</html>
