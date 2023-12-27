@@ -17,10 +17,12 @@ body {
 h1 {
     padding: 0 40px 40px 40px;
     text-align: center;
+    font-weight: bold;
 }
 h2 {
     padding: 40px 40px 0 40px;
-    background-color: #3a464f;
+    color: #3a464f;
+    font-weight: bold;
 }
 h4 {
     padding: 0 40px;
