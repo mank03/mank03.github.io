@@ -6,7 +6,7 @@ html {
     background: #00aded;
 }
 body {
-    font-size: large;
+    font-size: medium;
     /*margin: auto;*/
     /*overflow-x: auto;*/
     background-color: #f5f5f6;
@@ -21,7 +21,7 @@ h1 {
 }
 h2 {
     padding: 40px 40px 0 40px;
-    /*color: #3a464f;*/
+    color: #3a464f;
     font-weight: bold;
 }
 h4 {
